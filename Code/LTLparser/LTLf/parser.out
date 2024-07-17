@@ -1,0 +1,1913 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> formula
+Rule 1     formula -> formula AND formula
+Rule 2     formula -> formula WAND formula
+Rule 3     formula -> formula OR formula
+Rule 4     formula -> formula WOR formula
+Rule 5     formula -> formula IMPLIES formula
+Rule 6     formula -> formula DIMPLIES formula
+Rule 7     formula -> formula UNTIL formula
+Rule 8     formula -> formula LUNTIL formula
+Rule 9     formula -> formula UUNTIL formula
+Rule 10    formula -> NEXT formula
+Rule 11    formula -> LNEXT formula
+Rule 12    formula -> UNEXT formula
+Rule 13    formula -> EVENTUALLY formula
+Rule 14    formula -> LEVENTUALLY formula
+Rule 15    formula -> UEVENTUALLY formula
+Rule 16    formula -> GLOBALLY formula
+Rule 17    formula -> LGLOBALLY formula
+Rule 18    formula -> UGLOBALLY formula
+Rule 19    formula -> NOT formula
+Rule 20    formula -> WNOT formula
+Rule 21    formula -> TRUE
+Rule 22    formula -> FALSE
+Rule 23    formula -> TERM
+Rule 24    formula -> LPAR formula RPAR
+
+Terminals, with rules where they appear
+
+AND                  : 1
+DIMPLIES             : 6
+EVENTUALLY           : 13
+FALSE                : 22
+GLOBALLY             : 16
+IMPLIES              : 5
+LEVENTUALLY          : 14
+LGLOBALLY            : 17
+LNEXT                : 11
+LPAR                 : 24
+LUNTIL               : 8
+NEXT                 : 10
+NOT                  : 19
+OR                   : 3
+RPAR                 : 24
+TERM                 : 23
+TRUE                 : 21
+UEVENTUALLY          : 15
+UGLOBALLY            : 18
+UNEXT                : 12
+UNTIL                : 7
+UUNTIL               : 9
+WAND                 : 2
+WNOT                 : 20
+WOR                  : 4
+error                : 
+
+Nonterminals, with rules where they appear
+
+formula              : 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 11 12 13 14 15 16 17 18 19 20 24 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 1
+
+state 1
+
+    (0) S' -> formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             shift and go to state 17
+    WAND            shift and go to state 18
+    OR              shift and go to state 19
+    WOR             shift and go to state 20
+    IMPLIES         shift and go to state 21
+    DIMPLIES        shift and go to state 22
+    UNTIL           shift and go to state 23
+    LUNTIL          shift and go to state 24
+    UUNTIL          shift and go to state 25
+
+
+state 2
+
+    (10) formula -> NEXT . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 26
+
+state 3
+
+    (11) formula -> LNEXT . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 27
+
+state 4
+
+    (12) formula -> UNEXT . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 28
+
+state 5
+
+    (13) formula -> EVENTUALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 29
+
+state 6
+
+    (14) formula -> LEVENTUALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 30
+
+state 7
+
+    (15) formula -> UEVENTUALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 31
+
+state 8
+
+    (16) formula -> GLOBALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 32
+
+state 9
+
+    (17) formula -> LGLOBALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 33
+
+state 10
+
+    (18) formula -> UGLOBALLY . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 34
+
+state 11
+
+    (19) formula -> NOT . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 35
+
+state 12
+
+    (20) formula -> WNOT . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 36
+
+state 13
+
+    (21) formula -> TRUE .
+
+    AND             reduce using rule 21 (formula -> TRUE .)
+    WAND            reduce using rule 21 (formula -> TRUE .)
+    OR              reduce using rule 21 (formula -> TRUE .)
+    WOR             reduce using rule 21 (formula -> TRUE .)
+    IMPLIES         reduce using rule 21 (formula -> TRUE .)
+    DIMPLIES        reduce using rule 21 (formula -> TRUE .)
+    UNTIL           reduce using rule 21 (formula -> TRUE .)
+    LUNTIL          reduce using rule 21 (formula -> TRUE .)
+    UUNTIL          reduce using rule 21 (formula -> TRUE .)
+    $end            reduce using rule 21 (formula -> TRUE .)
+    RPAR            reduce using rule 21 (formula -> TRUE .)
+
+
+state 14
+
+    (22) formula -> FALSE .
+
+    AND             reduce using rule 22 (formula -> FALSE .)
+    WAND            reduce using rule 22 (formula -> FALSE .)
+    OR              reduce using rule 22 (formula -> FALSE .)
+    WOR             reduce using rule 22 (formula -> FALSE .)
+    IMPLIES         reduce using rule 22 (formula -> FALSE .)
+    DIMPLIES        reduce using rule 22 (formula -> FALSE .)
+    UNTIL           reduce using rule 22 (formula -> FALSE .)
+    LUNTIL          reduce using rule 22 (formula -> FALSE .)
+    UUNTIL          reduce using rule 22 (formula -> FALSE .)
+    $end            reduce using rule 22 (formula -> FALSE .)
+    RPAR            reduce using rule 22 (formula -> FALSE .)
+
+
+state 15
+
+    (23) formula -> TERM .
+
+    AND             reduce using rule 23 (formula -> TERM .)
+    WAND            reduce using rule 23 (formula -> TERM .)
+    OR              reduce using rule 23 (formula -> TERM .)
+    WOR             reduce using rule 23 (formula -> TERM .)
+    IMPLIES         reduce using rule 23 (formula -> TERM .)
+    DIMPLIES        reduce using rule 23 (formula -> TERM .)
+    UNTIL           reduce using rule 23 (formula -> TERM .)
+    LUNTIL          reduce using rule 23 (formula -> TERM .)
+    UUNTIL          reduce using rule 23 (formula -> TERM .)
+    $end            reduce using rule 23 (formula -> TERM .)
+    RPAR            reduce using rule 23 (formula -> TERM .)
+
+
+state 16
+
+    (24) formula -> LPAR . formula RPAR
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 37
+
+state 17
+
+    (1) formula -> formula AND . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 38
+
+state 18
+
+    (2) formula -> formula WAND . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 39
+
+state 19
+
+    (3) formula -> formula OR . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 40
+
+state 20
+
+    (4) formula -> formula WOR . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 41
+
+state 21
+
+    (5) formula -> formula IMPLIES . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 42
+
+state 22
+
+    (6) formula -> formula DIMPLIES . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 43
+
+state 23
+
+    (7) formula -> formula UNTIL . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 44
+
+state 24
+
+    (8) formula -> formula LUNTIL . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 45
+
+state 25
+
+    (9) formula -> formula UUNTIL . formula
+    (1) formula -> . formula AND formula
+    (2) formula -> . formula WAND formula
+    (3) formula -> . formula OR formula
+    (4) formula -> . formula WOR formula
+    (5) formula -> . formula IMPLIES formula
+    (6) formula -> . formula DIMPLIES formula
+    (7) formula -> . formula UNTIL formula
+    (8) formula -> . formula LUNTIL formula
+    (9) formula -> . formula UUNTIL formula
+    (10) formula -> . NEXT formula
+    (11) formula -> . LNEXT formula
+    (12) formula -> . UNEXT formula
+    (13) formula -> . EVENTUALLY formula
+    (14) formula -> . LEVENTUALLY formula
+    (15) formula -> . UEVENTUALLY formula
+    (16) formula -> . GLOBALLY formula
+    (17) formula -> . LGLOBALLY formula
+    (18) formula -> . UGLOBALLY formula
+    (19) formula -> . NOT formula
+    (20) formula -> . WNOT formula
+    (21) formula -> . TRUE
+    (22) formula -> . FALSE
+    (23) formula -> . TERM
+    (24) formula -> . LPAR formula RPAR
+
+    NEXT            shift and go to state 2
+    LNEXT           shift and go to state 3
+    UNEXT           shift and go to state 4
+    EVENTUALLY      shift and go to state 5
+    LEVENTUALLY     shift and go to state 6
+    UEVENTUALLY     shift and go to state 7
+    GLOBALLY        shift and go to state 8
+    LGLOBALLY       shift and go to state 9
+    UGLOBALLY       shift and go to state 10
+    NOT             shift and go to state 11
+    WNOT            shift and go to state 12
+    TRUE            shift and go to state 13
+    FALSE           shift and go to state 14
+    TERM            shift and go to state 15
+    LPAR            shift and go to state 16
+
+    formula                        shift and go to state 46
+
+state 26
+
+    (10) formula -> NEXT formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 10 (formula -> NEXT formula .)
+    WAND            reduce using rule 10 (formula -> NEXT formula .)
+    OR              reduce using rule 10 (formula -> NEXT formula .)
+    WOR             reduce using rule 10 (formula -> NEXT formula .)
+    IMPLIES         reduce using rule 10 (formula -> NEXT formula .)
+    DIMPLIES        reduce using rule 10 (formula -> NEXT formula .)
+    UNTIL           reduce using rule 10 (formula -> NEXT formula .)
+    LUNTIL          reduce using rule 10 (formula -> NEXT formula .)
+    UUNTIL          reduce using rule 10 (formula -> NEXT formula .)
+    $end            reduce using rule 10 (formula -> NEXT formula .)
+    RPAR            reduce using rule 10 (formula -> NEXT formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 27
+
+    (11) formula -> LNEXT formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 11 (formula -> LNEXT formula .)
+    WAND            reduce using rule 11 (formula -> LNEXT formula .)
+    OR              reduce using rule 11 (formula -> LNEXT formula .)
+    WOR             reduce using rule 11 (formula -> LNEXT formula .)
+    IMPLIES         reduce using rule 11 (formula -> LNEXT formula .)
+    DIMPLIES        reduce using rule 11 (formula -> LNEXT formula .)
+    UNTIL           reduce using rule 11 (formula -> LNEXT formula .)
+    LUNTIL          reduce using rule 11 (formula -> LNEXT formula .)
+    UUNTIL          reduce using rule 11 (formula -> LNEXT formula .)
+    $end            reduce using rule 11 (formula -> LNEXT formula .)
+    RPAR            reduce using rule 11 (formula -> LNEXT formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 28
+
+    (12) formula -> UNEXT formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 12 (formula -> UNEXT formula .)
+    WAND            reduce using rule 12 (formula -> UNEXT formula .)
+    OR              reduce using rule 12 (formula -> UNEXT formula .)
+    WOR             reduce using rule 12 (formula -> UNEXT formula .)
+    IMPLIES         reduce using rule 12 (formula -> UNEXT formula .)
+    DIMPLIES        reduce using rule 12 (formula -> UNEXT formula .)
+    UNTIL           reduce using rule 12 (formula -> UNEXT formula .)
+    LUNTIL          reduce using rule 12 (formula -> UNEXT formula .)
+    UUNTIL          reduce using rule 12 (formula -> UNEXT formula .)
+    $end            reduce using rule 12 (formula -> UNEXT formula .)
+    RPAR            reduce using rule 12 (formula -> UNEXT formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 29
+
+    (13) formula -> EVENTUALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 13 (formula -> EVENTUALLY formula .)
+    WAND            reduce using rule 13 (formula -> EVENTUALLY formula .)
+    OR              reduce using rule 13 (formula -> EVENTUALLY formula .)
+    WOR             reduce using rule 13 (formula -> EVENTUALLY formula .)
+    IMPLIES         reduce using rule 13 (formula -> EVENTUALLY formula .)
+    DIMPLIES        reduce using rule 13 (formula -> EVENTUALLY formula .)
+    UNTIL           reduce using rule 13 (formula -> EVENTUALLY formula .)
+    LUNTIL          reduce using rule 13 (formula -> EVENTUALLY formula .)
+    UUNTIL          reduce using rule 13 (formula -> EVENTUALLY formula .)
+    $end            reduce using rule 13 (formula -> EVENTUALLY formula .)
+    RPAR            reduce using rule 13 (formula -> EVENTUALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 30
+
+    (14) formula -> LEVENTUALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    WAND            reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    OR              reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    WOR             reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    IMPLIES         reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    DIMPLIES        reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    UNTIL           reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    LUNTIL          reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    UUNTIL          reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    $end            reduce using rule 14 (formula -> LEVENTUALLY formula .)
+    RPAR            reduce using rule 14 (formula -> LEVENTUALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 31
+
+    (15) formula -> UEVENTUALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    WAND            reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    OR              reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    WOR             reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    IMPLIES         reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    DIMPLIES        reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    UNTIL           reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    LUNTIL          reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    UUNTIL          reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    $end            reduce using rule 15 (formula -> UEVENTUALLY formula .)
+    RPAR            reduce using rule 15 (formula -> UEVENTUALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 32
+
+    (16) formula -> GLOBALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 16 (formula -> GLOBALLY formula .)
+    WAND            reduce using rule 16 (formula -> GLOBALLY formula .)
+    OR              reduce using rule 16 (formula -> GLOBALLY formula .)
+    WOR             reduce using rule 16 (formula -> GLOBALLY formula .)
+    IMPLIES         reduce using rule 16 (formula -> GLOBALLY formula .)
+    DIMPLIES        reduce using rule 16 (formula -> GLOBALLY formula .)
+    UNTIL           reduce using rule 16 (formula -> GLOBALLY formula .)
+    LUNTIL          reduce using rule 16 (formula -> GLOBALLY formula .)
+    UUNTIL          reduce using rule 16 (formula -> GLOBALLY formula .)
+    $end            reduce using rule 16 (formula -> GLOBALLY formula .)
+    RPAR            reduce using rule 16 (formula -> GLOBALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 33
+
+    (17) formula -> LGLOBALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 17 (formula -> LGLOBALLY formula .)
+    WAND            reduce using rule 17 (formula -> LGLOBALLY formula .)
+    OR              reduce using rule 17 (formula -> LGLOBALLY formula .)
+    WOR             reduce using rule 17 (formula -> LGLOBALLY formula .)
+    IMPLIES         reduce using rule 17 (formula -> LGLOBALLY formula .)
+    DIMPLIES        reduce using rule 17 (formula -> LGLOBALLY formula .)
+    UNTIL           reduce using rule 17 (formula -> LGLOBALLY formula .)
+    LUNTIL          reduce using rule 17 (formula -> LGLOBALLY formula .)
+    UUNTIL          reduce using rule 17 (formula -> LGLOBALLY formula .)
+    $end            reduce using rule 17 (formula -> LGLOBALLY formula .)
+    RPAR            reduce using rule 17 (formula -> LGLOBALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 34
+
+    (18) formula -> UGLOBALLY formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 18 (formula -> UGLOBALLY formula .)
+    WAND            reduce using rule 18 (formula -> UGLOBALLY formula .)
+    OR              reduce using rule 18 (formula -> UGLOBALLY formula .)
+    WOR             reduce using rule 18 (formula -> UGLOBALLY formula .)
+    IMPLIES         reduce using rule 18 (formula -> UGLOBALLY formula .)
+    DIMPLIES        reduce using rule 18 (formula -> UGLOBALLY formula .)
+    UNTIL           reduce using rule 18 (formula -> UGLOBALLY formula .)
+    LUNTIL          reduce using rule 18 (formula -> UGLOBALLY formula .)
+    UUNTIL          reduce using rule 18 (formula -> UGLOBALLY formula .)
+    $end            reduce using rule 18 (formula -> UGLOBALLY formula .)
+    RPAR            reduce using rule 18 (formula -> UGLOBALLY formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 35
+
+    (19) formula -> NOT formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 19 (formula -> NOT formula .)
+    WAND            reduce using rule 19 (formula -> NOT formula .)
+    OR              reduce using rule 19 (formula -> NOT formula .)
+    WOR             reduce using rule 19 (formula -> NOT formula .)
+    IMPLIES         reduce using rule 19 (formula -> NOT formula .)
+    DIMPLIES        reduce using rule 19 (formula -> NOT formula .)
+    UNTIL           reduce using rule 19 (formula -> NOT formula .)
+    LUNTIL          reduce using rule 19 (formula -> NOT formula .)
+    UUNTIL          reduce using rule 19 (formula -> NOT formula .)
+    $end            reduce using rule 19 (formula -> NOT formula .)
+    RPAR            reduce using rule 19 (formula -> NOT formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 36
+
+    (20) formula -> WNOT formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 20 (formula -> WNOT formula .)
+    WAND            reduce using rule 20 (formula -> WNOT formula .)
+    OR              reduce using rule 20 (formula -> WNOT formula .)
+    WOR             reduce using rule 20 (formula -> WNOT formula .)
+    IMPLIES         reduce using rule 20 (formula -> WNOT formula .)
+    DIMPLIES        reduce using rule 20 (formula -> WNOT formula .)
+    UNTIL           reduce using rule 20 (formula -> WNOT formula .)
+    LUNTIL          reduce using rule 20 (formula -> WNOT formula .)
+    UUNTIL          reduce using rule 20 (formula -> WNOT formula .)
+    $end            reduce using rule 20 (formula -> WNOT formula .)
+    RPAR            reduce using rule 20 (formula -> WNOT formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 37
+
+    (24) formula -> LPAR formula . RPAR
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    RPAR            shift and go to state 47
+    AND             shift and go to state 17
+    WAND            shift and go to state 18
+    OR              shift and go to state 19
+    WOR             shift and go to state 20
+    IMPLIES         shift and go to state 21
+    DIMPLIES        shift and go to state 22
+    UNTIL           shift and go to state 23
+    LUNTIL          shift and go to state 24
+    UUNTIL          shift and go to state 25
+
+
+state 38
+
+    (1) formula -> formula AND formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 1 (formula -> formula AND formula .)
+    WAND            reduce using rule 1 (formula -> formula AND formula .)
+    OR              reduce using rule 1 (formula -> formula AND formula .)
+    WOR             reduce using rule 1 (formula -> formula AND formula .)
+    IMPLIES         reduce using rule 1 (formula -> formula AND formula .)
+    DIMPLIES        reduce using rule 1 (formula -> formula AND formula .)
+    UNTIL           reduce using rule 1 (formula -> formula AND formula .)
+    LUNTIL          reduce using rule 1 (formula -> formula AND formula .)
+    UUNTIL          reduce using rule 1 (formula -> formula AND formula .)
+    $end            reduce using rule 1 (formula -> formula AND formula .)
+    RPAR            reduce using rule 1 (formula -> formula AND formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 39
+
+    (2) formula -> formula WAND formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 2 (formula -> formula WAND formula .)
+    WAND            reduce using rule 2 (formula -> formula WAND formula .)
+    OR              reduce using rule 2 (formula -> formula WAND formula .)
+    WOR             reduce using rule 2 (formula -> formula WAND formula .)
+    IMPLIES         reduce using rule 2 (formula -> formula WAND formula .)
+    DIMPLIES        reduce using rule 2 (formula -> formula WAND formula .)
+    UNTIL           reduce using rule 2 (formula -> formula WAND formula .)
+    LUNTIL          reduce using rule 2 (formula -> formula WAND formula .)
+    UUNTIL          reduce using rule 2 (formula -> formula WAND formula .)
+    $end            reduce using rule 2 (formula -> formula WAND formula .)
+    RPAR            reduce using rule 2 (formula -> formula WAND formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 40
+
+    (3) formula -> formula OR formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 3 (formula -> formula OR formula .)
+    WAND            reduce using rule 3 (formula -> formula OR formula .)
+    OR              reduce using rule 3 (formula -> formula OR formula .)
+    WOR             reduce using rule 3 (formula -> formula OR formula .)
+    IMPLIES         reduce using rule 3 (formula -> formula OR formula .)
+    DIMPLIES        reduce using rule 3 (formula -> formula OR formula .)
+    UNTIL           reduce using rule 3 (formula -> formula OR formula .)
+    LUNTIL          reduce using rule 3 (formula -> formula OR formula .)
+    UUNTIL          reduce using rule 3 (formula -> formula OR formula .)
+    $end            reduce using rule 3 (formula -> formula OR formula .)
+    RPAR            reduce using rule 3 (formula -> formula OR formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 41
+
+    (4) formula -> formula WOR formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 4 (formula -> formula WOR formula .)
+    WAND            reduce using rule 4 (formula -> formula WOR formula .)
+    OR              reduce using rule 4 (formula -> formula WOR formula .)
+    WOR             reduce using rule 4 (formula -> formula WOR formula .)
+    IMPLIES         reduce using rule 4 (formula -> formula WOR formula .)
+    DIMPLIES        reduce using rule 4 (formula -> formula WOR formula .)
+    UNTIL           reduce using rule 4 (formula -> formula WOR formula .)
+    LUNTIL          reduce using rule 4 (formula -> formula WOR formula .)
+    UUNTIL          reduce using rule 4 (formula -> formula WOR formula .)
+    $end            reduce using rule 4 (formula -> formula WOR formula .)
+    RPAR            reduce using rule 4 (formula -> formula WOR formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 42
+
+    (5) formula -> formula IMPLIES formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 5 (formula -> formula IMPLIES formula .)
+    WAND            reduce using rule 5 (formula -> formula IMPLIES formula .)
+    OR              reduce using rule 5 (formula -> formula IMPLIES formula .)
+    WOR             reduce using rule 5 (formula -> formula IMPLIES formula .)
+    IMPLIES         reduce using rule 5 (formula -> formula IMPLIES formula .)
+    DIMPLIES        reduce using rule 5 (formula -> formula IMPLIES formula .)
+    UNTIL           reduce using rule 5 (formula -> formula IMPLIES formula .)
+    LUNTIL          reduce using rule 5 (formula -> formula IMPLIES formula .)
+    UUNTIL          reduce using rule 5 (formula -> formula IMPLIES formula .)
+    $end            reduce using rule 5 (formula -> formula IMPLIES formula .)
+    RPAR            reduce using rule 5 (formula -> formula IMPLIES formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 43
+
+    (6) formula -> formula DIMPLIES formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    WAND            reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    OR              reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    WOR             reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    IMPLIES         reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    DIMPLIES        reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    UNTIL           reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    LUNTIL          reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    UUNTIL          reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    $end            reduce using rule 6 (formula -> formula DIMPLIES formula .)
+    RPAR            reduce using rule 6 (formula -> formula DIMPLIES formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 44
+
+    (7) formula -> formula UNTIL formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 7 (formula -> formula UNTIL formula .)
+    WAND            reduce using rule 7 (formula -> formula UNTIL formula .)
+    OR              reduce using rule 7 (formula -> formula UNTIL formula .)
+    WOR             reduce using rule 7 (formula -> formula UNTIL formula .)
+    IMPLIES         reduce using rule 7 (formula -> formula UNTIL formula .)
+    DIMPLIES        reduce using rule 7 (formula -> formula UNTIL formula .)
+    UNTIL           reduce using rule 7 (formula -> formula UNTIL formula .)
+    LUNTIL          reduce using rule 7 (formula -> formula UNTIL formula .)
+    UUNTIL          reduce using rule 7 (formula -> formula UNTIL formula .)
+    $end            reduce using rule 7 (formula -> formula UNTIL formula .)
+    RPAR            reduce using rule 7 (formula -> formula UNTIL formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 45
+
+    (8) formula -> formula LUNTIL formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 8 (formula -> formula LUNTIL formula .)
+    WAND            reduce using rule 8 (formula -> formula LUNTIL formula .)
+    OR              reduce using rule 8 (formula -> formula LUNTIL formula .)
+    WOR             reduce using rule 8 (formula -> formula LUNTIL formula .)
+    IMPLIES         reduce using rule 8 (formula -> formula LUNTIL formula .)
+    DIMPLIES        reduce using rule 8 (formula -> formula LUNTIL formula .)
+    UNTIL           reduce using rule 8 (formula -> formula LUNTIL formula .)
+    LUNTIL          reduce using rule 8 (formula -> formula LUNTIL formula .)
+    UUNTIL          reduce using rule 8 (formula -> formula LUNTIL formula .)
+    $end            reduce using rule 8 (formula -> formula LUNTIL formula .)
+    RPAR            reduce using rule 8 (formula -> formula LUNTIL formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 46
+
+    (9) formula -> formula UUNTIL formula .
+    (1) formula -> formula . AND formula
+    (2) formula -> formula . WAND formula
+    (3) formula -> formula . OR formula
+    (4) formula -> formula . WOR formula
+    (5) formula -> formula . IMPLIES formula
+    (6) formula -> formula . DIMPLIES formula
+    (7) formula -> formula . UNTIL formula
+    (8) formula -> formula . LUNTIL formula
+    (9) formula -> formula . UUNTIL formula
+
+    AND             reduce using rule 9 (formula -> formula UUNTIL formula .)
+    WAND            reduce using rule 9 (formula -> formula UUNTIL formula .)
+    OR              reduce using rule 9 (formula -> formula UUNTIL formula .)
+    WOR             reduce using rule 9 (formula -> formula UUNTIL formula .)
+    IMPLIES         reduce using rule 9 (formula -> formula UUNTIL formula .)
+    DIMPLIES        reduce using rule 9 (formula -> formula UUNTIL formula .)
+    UNTIL           reduce using rule 9 (formula -> formula UUNTIL formula .)
+    LUNTIL          reduce using rule 9 (formula -> formula UUNTIL formula .)
+    UUNTIL          reduce using rule 9 (formula -> formula UUNTIL formula .)
+    $end            reduce using rule 9 (formula -> formula UUNTIL formula .)
+    RPAR            reduce using rule 9 (formula -> formula UUNTIL formula .)
+
+  ! AND             [ shift and go to state 17 ]
+  ! WAND            [ shift and go to state 18 ]
+  ! OR              [ shift and go to state 19 ]
+  ! WOR             [ shift and go to state 20 ]
+  ! IMPLIES         [ shift and go to state 21 ]
+  ! DIMPLIES        [ shift and go to state 22 ]
+  ! UNTIL           [ shift and go to state 23 ]
+  ! LUNTIL          [ shift and go to state 24 ]
+  ! UUNTIL          [ shift and go to state 25 ]
+
+
+state 47
+
+    (24) formula -> LPAR formula RPAR .
+
+    AND             reduce using rule 24 (formula -> LPAR formula RPAR .)
+    WAND            reduce using rule 24 (formula -> LPAR formula RPAR .)
+    OR              reduce using rule 24 (formula -> LPAR formula RPAR .)
+    WOR             reduce using rule 24 (formula -> LPAR formula RPAR .)
+    IMPLIES         reduce using rule 24 (formula -> LPAR formula RPAR .)
+    DIMPLIES        reduce using rule 24 (formula -> LPAR formula RPAR .)
+    UNTIL           reduce using rule 24 (formula -> LPAR formula RPAR .)
+    LUNTIL          reduce using rule 24 (formula -> LPAR formula RPAR .)
+    UUNTIL          reduce using rule 24 (formula -> LPAR formula RPAR .)
+    $end            reduce using rule 24 (formula -> LPAR formula RPAR .)
+    RPAR            reduce using rule 24 (formula -> LPAR formula RPAR .)
+
